@@ -15,23 +15,34 @@ background:black;
 }
 
 iframe{
-position:fixed;
-top:0;
-left:0;
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+
+<style>
+html,body{
+margin:0;
 width:100%;
 height:100%;
-border:none;
+overflow:hidden;
+background:black;
+}
+
+video{
+width:100%;
+height:100%;
+object-fit:cover;
+background:black;
 }
 </style>
 </head>
 
 <body>
 
-<iframe
-src="https://www.youtube-nocookie.com/embed/fZvuHkHYaXk?autoplay=1&controls=0&modestbranding=1&rel=0"
-allow="autoplay; encrypted-media"
-allowfullscreen>
-</iframe>
+<video autoplay muted controls>
+<source src="https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8" type="application/x-mpegURL">
+</video>
 
 </body>
 </html>
